@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/solecito.png" type="image/png"> <!-- Ícono de la pagina -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
     <title>blogsito eq6</title>
 </head>
+
 <body>
-    
+    <header class="bg-gradient text-black text-center p-4">
+        <h1>Blog de Desarrollo Web</h1>
+        <p>Fundamentos, estructura y estilo para crear sitios hermosos</p>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Sección 1: Introducción -->
+        <section id="introduccion" class="mb-5">
+            <h2 class="text-primary">Introducción al Desarrollo Web</h2>
+            <p>El desarrollo web es el proceso de crear sitios y aplicaciones para internet. Incluye diseño visual, estructura de contenido y funcionalidad. Se divide en frontend (lo que ves) y backend (lo que funciona detrás).</p>
+            <ul>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: Servidores, bases de datos</li>
+                <li>Responsive Design: Adaptación a móviles</li>
+            </ul>
+        </section>
+
+        <!-- Sección 2: HTML -->
+        <section id="html" class="mb-5">
+            <h2 class="text-success">Fundamentos de HTML</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje que estructura el contenido de la web. Usa etiquetas para definir encabezados, párrafos, imágenes, enlaces y más.</p>
+            <div class="card p-3 bg-light">
+                <code>
+                &lt;h1&gt;Título principal&lt;/h1&gt;<br>
+                &lt;p&gt;Este es un párrafo.&lt;/p&gt;<br>
+                &lt;a href="https://ejemplo.com"&gt;Enlace&lt;/a&gt;
+                </code>
+            </div>
+        </section>
+
+        <!-- Sección 3: CSS -->
+        <section id="css" class="mb-5">
+            <h2 class="text-info">Fundamentos de CSS</h2>
+            <p>CSS (Cascading Style Sheets) se usa para embellecer el HTML. Permite aplicar colores, fuentes, márgenes, animaciones y estilos responsivos.</p>
+            <div class="card p-3 bg-light">
+                <code>
+                h1 { color: #ff69b4; font-family: 'Comic Sans MS'; }<br>
+                p { background-color: #f0f8ff; padding: 10px; }
+                </code>
+            </div>
+        </section>
+        <!-- Sección 4: Nosotros -->
+        <section id="nosotros" class="mb-5">
+            <h2 class="text-warning">Nosotros</h2>
+            <p>Este blog fue creado por <strong>el equipo 6</strong>, aquí compartimos conocimientos con amor y creatividad.</p>
+            <div class="row">
+                <div class="col-md-6">
+                <img src="assets/img/brissa.png" alt="Brissa" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                <ul>
+                    <li>Diseño web kawaii</li>
+                    <li>Responsive y accesible</li>
+                    <li>Inspiración musical y anime</li>
+                </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Blog creado con por Equipo 6 | UANL 2025</p>
+    </footer>
 </body>
 </html>
