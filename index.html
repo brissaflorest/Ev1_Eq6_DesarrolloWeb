@@ -111,61 +111,91 @@
         </section>
 
         <!-- Sección 2: HTML -->
-        <section id="html" class="mb-5">
-          <h2 class="text-success">Fundamentos de HTML</h2>
-          <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos. Como lo sugiere el título, este artículo te dará una comprensión básica de HTML y cuál es su función.</p>
+        <section id="conceptos-html5" class="mb-5">
+            <article>
+                <header>
+                    <h3 class="text-rosita">Conceptos clave de HTML5</h3>
+                    <p><strong>HTML</strong> (HyperText Markup Language) es el lenguaje base que estructura el contenido de una página web. Con HTML5, se introdujeron etiquetas semánticas que mejoran la organización y accesibilidad del contenido.</p>
+                </header>
 
-         <p><strong>El propósito principal de HTML es:</strong></p>
-          <ul>
-             <li>Dar estructura y semántica al contenido (títulos, párrafos, listas, tablas, imágenes, enlaces).</li>
-              <li>Permitir que los navegadores interpreten y muestren la información de manera correcta.</li>
-                <li>Servir como base para integrar otros lenguajes como CSS (diseño) y JavaScript (interactividad).</li>
-         </ul>
+                <section>
+                    <h4 class="text-decoration-underline">Definiciones esenciales</h4>
+                    <ul>
+                        <li><strong>Doctype:</strong> Es el preámbulo obligatorio que indica al navegador que debe seguir los estándares modernos y evitar el modo normal.<code>&lt;!DOCTYPE html&gt;</code></li><br>
 
-         <p><strong>Doctype:</strong> En HTML, el doctype es el preámbulo obligatorio <code>&lt;!DOCTYPE html&gt;</code> que se encuentra al principio de todos los documentos. Su único propósito es evitar que el navegador entre en el llamado "modo peculiar" al renderizar un documento; es decir, el doctype garantiza que el navegador haga todo lo posible por seguir las especificaciones pertinentes, en lugar de usar un modo de renderizado diferente que sea incompatible con algunas especificaciones.</p>
-         <p><strong>Document Tree (DOM):</strong> Un "documento tree HTML" es una representación jerárquica de un documento HTML como un árbol de nodos, conocido como Modelo de Objetos de Documento (DOM). Este árbol, con un nodo raíz (el documento), nodos hijos (elementos, atributos, texto) y relaciones padre-hijo, permite a JavaScript acceder y modificar el contenido, la estructura y el estilo de una página web. Los navegadores utilizan el DOM para interpretar y mostrar el contenido de un sitio web.</p>
+                        <li><strong>Document Tree (DOM):</strong> Es la estructura jerárquica del documento HTML. Cada elemento es un nodo, y el DOM permite que JavaScript modifique contenido, estilo y estructura.</li><br>
 
-         <p><strong>Etiquetas comunes de HTML:</strong></p>
-         <p><strong>&lt;p&gt;</strong>: Define un párrafo.</p>
-         <p><strong>&lt;br&gt;</strong>: Inserta un salto de línea.</p>
-         <p><strong>&lt;hr&gt;</strong>: Inserta una línea horizontal para separar secciones.</p>
-         <p><strong>&lt;blockquote&gt;</strong>: Define una cita textual larga.</p>
-         <p><strong>&lt;q&gt;</strong>: Define una cita corta dentro de una oración.</p>
-         <p><strong>&lt;abbr&gt;</strong>: Abreviatura con texto explicativo al pasar el mouse.</p>
-         <p><strong>&lt;cite&gt;</strong>: Título de una obra (libro, película, etc.).</p>
-         <p><strong>&lt;mark&gt;</strong>: Texto resaltado o destacado.</p>
+                        <li><strong>Etiquetas comunes de HTML:</strong>
+                            <ul>
+                                <li>Define un párrafo:<code>&lt;p&gt;</code></li><br>
+                                <li>Salto de línea:<code>&lt;br&gt;</code></li><br>
+                                <li>Línea horizontal:<code>&lt;hr&gt;</code></li><br>
+                                <li>Cita larga:<code>&lt;blockquote&gt;</code></li><br>
+                                <li>Cita corta:<code>&lt;q&gt;</code></li><br>
+                                <li>Abreviatura con tooltip:<code>&lt;abbr&gt;</code></li><br>
+                                <li>Título de obra:<code>&lt;cite&gt;</code></li><br>
+                                <li>Texto resaltado:<code>&lt;mark&gt;</code></li><br>
+                                <li>Texto menos importante:<code>&lt;small&gt;</code></li><br>
+                                <li>Énfasis fuerte:<code>&lt;strong&gt;</code></li><br>
+                                <li>Énfasis suave:<code>&lt;em&gt;</code></li><br>
+                                <li>Negrita sin semántica:<code>&lt;b&gt;</code></li><br>
+                                <li>Cursiva sin semántica:<code>&lt;i&gt;</code></li><br>
+                                <li>Subrayado:<code>&lt;u&gt;</code></li><br>
+                                <li>Texto tachado:<code>&lt;del&gt;</code></li><br>
+                                <li>Subíndice:<code>&lt;sub&gt;</code></li><br>
+                                <li>Superíndice:<code>&lt;sup&gt;</code></li><br>
+                                <li>Enlace con href:<code>&lt;a&gt;</code></li><br>
+                                <li>Imagen con src y alt:<code>&lt;img&gt;</code></li><br>
+                                <li>Página embebida:<code>&lt;iframe&gt;</code></li><br>
+                                <li>Lista con viñetas:<code>&lt;ul&gt;</code></li><br>
+                                <li>Lista numerada:<code>&lt;ol&gt;</code></li><br>
+                                <li>Lista de definición:<code>&lt;dl&gt;</code></li><br>
+                                <li>Contenedor genérico:<code>&lt;div&gt;</code></li><br>
+                            </ul>
+                        </li>
+  
+                        <li><strong>Atributos:</strong> Modifican el comportamiento de los elementos.<br>
+                            <code>&lt;img src="foto.jpg" alt="Descripción"&gt;</code>
+                        </li><br>
 
-         <p><strong>&lt;small&gt;</strong>: Texto con menor importancia.</p>
+                        <li><strong>Comentarios:</strong> Ayudan a documentar el código sin mostrarse en la página.<br>
+                        <code>&lt;!-- Esto es un comentario --&gt;</code>
+                        </li><br>
 
-         <p><strong>&lt;strong&gt;</strong>: Texto con énfasis fuerte (negrita).</p>
+                        <li><strong>Indentación:</strong> Organiza el código para que sea legible. No afecta la visualización, pero sí la claridad.</li><br>
 
-         <p><strong>&lt;em&gt;</strong>: Texto enfatizado (cursiva).</p>
+                        <li><strong>Sección &lt;head&gt;:</strong> Contiene metadatos, enlaces a estilos y scripts.<br>
+                        <code>
+                            &lt;head&gt;<br>
+                            &nbsp;&nbsp;&lt;title&gt;Mi Blog&lt;/title&gt;<br>
+                            &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                            &lt;/head&gt;
+                        </code>
+                        </li><br>
+                    </ul>
+                </section>
 
-         <p><strong>&lt;b&gt;</strong>: Texto en negrita sin valor semántico.</p>
+                <section>
+                    <h4 class="text-decoration-underline">Organización semántica en HTML5</h4>
+                    <p>HTML5 promueve el uso de etiquetas que definen claramente el propósito de cada parte del contenido:</p>
+                    <ol>
+                        <li>Encabezado de página o sección:<code>&lt;header&gt;</code></li><br>
+                        <li>Menú de navegación:<code>&lt;nav&gt;</code></li><br>
+                        <li>Contenido principal:<code>&lt;main&gt;</code></li><br>
+                        <li>Agrupación temática:<code>&lt;section&gt;</code></li><br>
+                        <li>Contenido independiente:<code>&lt;article&gt;</code></li><br>
+                        <li>Información complementaria:<code>&lt;aside&gt;</code></li><br>
+                        <li>Pie de página:<code>&lt;footer&gt;</code></li><br>
+                    </ol>
+                </section>
 
-         <p><strong>&lt;i&gt;</strong>: Texto en cursiva sin valor semántico.</p>
-         <p><strong>&lt;u&gt;</strong>: Texto subrayado.</p>
-         <p><strong>&lt;del&gt;</strong>:Esta etiqueta se utiliza para texto  tachado.</p>
-         <p><strong>&lt;sub&gt;</strong>:esta etiqueta se utiliza para texto en subíndice. </p>
-         <p><strong>&lt;sup&gt;</strong>:esta etiqueta se utiliza para texto en superíndice.</p>
-         <p><strong>&lt;a&gt;</strong>: esta etiqueta se utiliza para crear un enlace a otra página o recurso. Usa el atributo href.</p>
-         <p><strong>&lt;img&gt;</strong>: Inserta una imagen. Necesita atributos src y alt.</p>
-         <p><strong>&lt;iframe&gt;</strong>: Inserta otra página web dentro del documento actual.</p>
-         <p><strong>&lt;ul&gt;</strong>: Crea una Lista desordenada con viñetas.</p>
-         <p><strong>&lt;ol&gt;</strong>: Crea una Lista ordenada numerada.</p>
-         <p><strong>&lt;dl&gt;</strong>: Crea una Lista de definición.</p>
-         <p><strong>&lt;div&gt;</strong>: Crea un Contenedor en bloque para agrupar contenido.</p>
-     </section>
-
-
-
-
-
-
-
-    
-</section>
-
+                <h5>Explora más sobre HTML5 en estos sitios:</h5>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Elementos Semánticos</a></li>
+                </ul>
+            </article>
+        </section>
 
         <!-- Sección 3: CSS -->
         <section id="css" class="mb-5">
