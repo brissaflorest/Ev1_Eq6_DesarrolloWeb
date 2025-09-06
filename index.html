@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es" translate="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/solecito.png" type="image/png"> <!-- Ícono de la pagina -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>blogsito eq6</title>
 </head>
@@ -20,18 +22,99 @@
         <!-- Sección 1: Introducción -->
         <section id="introduccion" class="mb-5">
             <h2 class="text-primary">Introducción al Desarrollo Web</h2>
-            <p>El desarrollo web es el proceso de crear sitios y aplicaciones para internet. Incluye diseño visual, estructura de contenido y funcionalidad. Se divide en frontend (lo que ves) y backend (lo que funciona detrás).</p>
+            <p>El desarrollo web es el proceso de diseñar, construir y mantener sitios o aplicaciones que funcionan a
+                través de Internet o de una intranet. Implica tanto la parte visual (lo que ve el usuario) como la
+                lógica interna (procesos y almacenamiento de datos).
+                <br> <br>
+                En el mundo del desarrollo web, comprender cómo funciona la comunicación entre cliente y servidor es
+                esencial. Desde este modelo se desprenden conceptos clave como los puertos de comunicación, el servidor
+                web, el funcionamiento de una aplicación web y el despliegue de contenido en internet.
+            </p>
             <ul>
-                <li>Frontend: HTML, CSS, JavaScript</li>
-                <li>Backend: Servidores, bases de datos</li>
-                <li>Responsive Design: Adaptación a móviles</li>
+                <li><strong>Modelo cliente-servidor</strong>
+                    <p>El modelo cliente-servidor es la base de las aplicaciones web modernas.</p>
+                    <ul>
+                        <li><strong>Cliente:</strong> Normalmente es el navegador (Chrome, Firefox, Edge, Safari), que
+                            envía solicitudes al servidor.</li><br>
+                        <li><strong>Servidor:</strong> Es el equipo que recibe esas solicitudes, las procesa y devuelve
+                            una respuesta al cliente.</li><br>
+                    </ul>
+                    <p><strong>Ejemplos:</strong>
+                    <ul>
+                        <li>Correo electrónico: el cliente (como Gmail u Outlook) se conecta al servidor de correo, el
+                            cual guarda y distribuye los mensajes. Cuando envías un correo, el cliente lo entrega al
+                            servidor, y
+                            cuando recibes, el cliente descarga el mensaje desde ese servidor.
+                        </li>
+                        <br>
+                        <li>Cuando escribes
+                            www.tienda.com en tu navegador, el cliente envía la
+                            petición al servidor, este busca los datos y responde con la página web que ves en pantalla.
+                        </li>
+                    </ul>
+                    </p>
+                </li>
+
+                <li><strong>Puertos de comunicación</strong>
+                    <p>En esta comunicación entran en juego los puertos, que son canales virtuales para identificar
+                        diferentes servicios de red, gracias a estos puertos, el sistema sabe qué tipo de comunicación
+                        está manejando.</p>
+                    <ul>
+                        <li><strong>Puerto 80 (HTTP):</strong> tráfico web sin cifrado.</li>
+                        <li><strong>Puerto 443 (HTTPS):</strong> tráfico web seguro con certificado SSL/TLS.</li>
+                        <li><strong>Otros puertos comunes:</strong> 21 (FTP), 25 (SMTP), 3306 (MySQL).</li>
+                    </ul>
+                </li>
+                <br>
+                <li><strong>Servidor Web</strong></li>
+                <p>Un servidor web es el software (y hardware) encargado de recibir solicitudes del cliente y devolver
+                    los recursos necesarios: páginas HTML, imágenes, archivos CSS o respuestas JSON. <br> <br> Algunos
+                    de los más utilizados son:</p>
+                <ul>
+                    <li>
+                        <strong>Apache:</strong> Muy popular y flexible, soporta módulos para ampliar sus
+                        funcionalidades.
+                    </li>
+                    <li>
+                        <strong>Nginx:</strong> Conocido por su alto rendimiento y capacidad para manejar muchas
+                        conexiones simultáneas.
+                    </li>
+                    <li>
+                        <strong>Microsoft IIS:</strong> Integrado en sistemas Windows, ideal para entornos .NET.
+                    </li>
+                </ul>
+                <br>
+                <p>Sin un servidor web, los navegadores no podrían recibir la información que despliegan a los usuarios.
+                </p>
+                </li>
+
+                <li><strong>Funcionamiento de una Aplicación Web</strong></li>
+                    <p>El funcionamiento de una aplicación web se basa en la interacción constante entre el cliente
+                        (normalmente el navegador del usuario) y el servidor, a través de solicitudes y respuestas. El
+                        proceso puede describirse en pasos:</p>
+                    <ol>
+                        <li>El usuario accede a la aplicación desde su navegador o dispositivo móvil, ingresando una URL o haciendo clic en un enlace.</li>
+                        <li>El navegador envía una solicitud (request) al servidor web utilizando el protocolo HTTP o HTTPS.</li>
+                        <li>El servidor recibe la solicitud y la procesa. Si necesita información adicional, consulta a una base de datos (por ejemplo, la lista de productos, datos de usuarios o historial de compras).</li>
+                        <li>El servidor genera una respuesta (response), que puede ser una página HTML, un archivo JSON o cualquier recurso solicitado (imágenes, estilos, scripts).</li>
+                        <li>El navegador interpreta la respuesta y la presenta de manera visual al usuario.</li>
+                    </ol>
+                    <p><strong>Ejemplo:</strong> Cuando entras a una tienda en línea y buscas un producto, el navegador envía tu búsqueda al servidor, este consulta la base de datos, obtiene los resultados y devuelve una página con los productos que coinciden con tu búsqueda.</p>
+
+                <li><strong>Despliegue de Contenido Web</strong></li>
+                    <ol><strong>Desarrollo local:<strong> Creación y prueba en una computadora personal.</ol>
+                    <ol><strong>Servidor de pruebas (staging):<strong> Un entorno para verificar que todo funcione bien.</ol>
+                    <ol><strong>Producción:<strong> Publicación en un servidor web accesible al público.</ol>
+                    <ol><strong>Dominio y DNS:</strong> Configuración de un nombre de dominio (ejemplo: www.miweb.com) que apunte al servidor.</ol>
+                    <ol><strong>Mantenimiento:</strong> actualizaciones, correcciones y mejoras periódica.</ol>
             </ul>
         </section>
 
         <!-- Sección 2: HTML -->
         <section id="html" class="mb-5">
             <h2 class="text-success">Fundamentos de HTML</h2>
-            <p>HTML (HyperText Markup Language) es el lenguaje que estructura el contenido de la web. Usa etiquetas para definir encabezados, párrafos, imágenes, enlaces y más.</p>
+            <p>HTML (HyperText Markup Language) es el lenguaje que estructura el contenido de la web. Usa etiquetas para
+                definir encabezados, párrafos, imágenes, enlaces y más.</p>
             <div class="card p-3 bg-light">
                 <code>
                 &lt;h1&gt;Título principal&lt;/h1&gt;<br>
@@ -44,7 +127,8 @@
         <!-- Sección 3: CSS -->
         <section id="css" class="mb-5">
             <h2 class="text-info">Fundamentos de CSS</h2>
-            <p>CSS (Cascading Style Sheets) se usa para embellecer el HTML. Permite aplicar colores, fuentes, márgenes, animaciones y estilos responsivos.</p>
+            <p>CSS (Cascading Style Sheets) se usa para embellecer el HTML. Permite aplicar colores, fuentes, márgenes,
+                animaciones y estilos responsivos.</p>
             <div class="card p-3 bg-light">
                 <code>
                 h1 { color: #ff69b4; font-family: 'Comic Sans MS'; }<br>
@@ -55,17 +139,18 @@
         <!-- Sección 4: Nosotros -->
         <section id="nosotros" class="mb-5">
             <h2 class="text-warning">Nosotros</h2>
-            <p>Este blog fue creado por <strong>el equipo 6</strong>, aquí compartimos conocimientos con amor y creatividad.</p>
+            <p>Este blog fue creado por <strong>el equipo 6</strong>, aquí compartimos conocimientos con amor y
+                creatividad.</p>
             <div class="row">
                 <div class="col-md-6">
-                <img src="assets/img/brissa.png" alt="Brissa" class="img-fluid rounded">
+                    <img src="assets/img/brissa.png" alt="Brissa" class="img-fluid rounded">
                 </div>
                 <div class="col-md-6">
-                <ul>
-                    <li>Diseño web kawaii</li>
-                    <li>Responsive y accesible</li>
-                    <li>Inspiración musical y anime</li>
-                </ul>
+                    <ul>
+                        <li>Diseño web kawaii</li>
+                        <li>Responsive y accesible</li>
+                        <li>Inspiración musical y anime</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -75,4 +160,5 @@
         <p>Blog creado con por Equipo 6 | UANL 2025</p>
     </footer>
 </body>
+
 </html>
