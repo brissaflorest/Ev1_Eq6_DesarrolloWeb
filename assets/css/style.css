@@ -94,7 +94,7 @@ a:hover {
 }
 
 .contenedor-texto {
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center; /* centra verticalmente respecto a la imagen */
   padding-left: 2rem;      /* separa de la imagen */
@@ -107,4 +107,33 @@ a:hover {
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
+}
+
+/*------------------SCROLLBAR-------------------*/
+::-webkit-scrollbar {width: 13px;}
+
+::-webkit-scrollbar-track {
+    background: #ffc0cb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff96c2;}
+
+::-webkit-scrollbar-thumb:hover {background: #d46b97;}
+
+
+/*VUELTA AL INDICE*/
+#vuelta-indice{
+    display: flex;
+    gap: 8px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+}
+
+#vuelta-indice:hover{
+  transition: all .5s ease;
+    scale: 1.09;
 }
