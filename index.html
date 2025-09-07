@@ -214,15 +214,113 @@
 
         <!-- Sección 3: CSS -->
         <section id="css" class="mb-5">
-            <h2 class="text-info">Fundamentos de CSS</h2>
-            <p>CSS (Cascading Style Sheets) se usa para embellecer el HTML. Permite aplicar colores, fuentes, márgenes,
-                animaciones y estilos responsivos.</p>
-            <div class="card p-3 bg-light">
-                <code>
-                h1 { color: #ff69b4; font-family: 'Comic Sans MS'; }<br>
-                p { background-color: #f0f8ff; padding: 10px; }
-                </code>
-            </div>
+            <h1>Sobre CSS</h1>
+            <article>
+                <section>
+                    <h2>¿Qué es CSS?</h2>
+                    <p>Es un lenguaje que define el estilo de páginas web: colores, tamaños, posiciones y diseño.</p>
+                    <p>Se puede aplicar en línea, en el head con <code>&lt;style&gt;</code> o en un archivo externo <code>.css</code>.</p>
+                    <h2>Su proposito</h2>
+                    <p>CSS es el modelo de lenguaje caracteristico de html, diseñado principalmente para ser el proveedor del diseño del contenido de nuestro archivo html. <br>
+                        Su función es separar la estructura de la presentación, facilitando la creación de diseños web mas atractivos.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Sintaxis</h2>
+                    <p><code>elemento { propiedad: valor; }</code></p>
+                    <p>Ejemplo: <code>p { color: red; }</code></p>
+                    <h2>Indentación</h2>
+                    <p>Es un proceso simple que se sigue para la indentacion dentro de CSS, ya que todo se compone de el orden en el codigo.</p>
+                    <p>Ejemplo CON Indentación: <br>
+                        <code> p {<br> 
+                            &nbsp; color: red; <br> 
+                            &nbsp; margin: 20px; <br> 
+                            &nbsp; padding: 10px; <br> }</code></p>
+                    <h2>Comentarios</h2>
+                    <p>El metodo que se utiliza para dejar un comentario como programador en este lenguaje, 
+                        es distinto a muchos otros. Pero funciona de la misma manera, 
+                        no se muestra al usuario y solo lo ven las personas con acceso al codigo 
+                        (o si eres curioso e inspeccionas la pagina con tu navegador)</p>
+                    <p><code>/*<i>COMENTARIO</i>*/</code></p>
+                    <p>Ejemplo de uso: <code>/*ESTO ES UN COMENTARIO*/</code></p>
+                </section>
+
+                <section>
+                    <h2>Selectores principales</h2>
+                    <ul>
+                    <li><strong>Tipo:</strong> h1, p, div</li>
+                    <li><strong>Clase:</strong> .caja</li>
+                    <li><strong>ID:</strong> #principal</li>
+                    <li><strong>Pseudoclases:</strong> :hover, :first-child</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Modelo de caja</h2>
+                    <p>Cada elemento se compone de: <em>contenido</em> + <em>padding</em> + <em>border</em> + <em>margin</em>.</p>
+                </section>
+
+                <section>
+                    <h2>Propiedades comunes</h2>
+                    <ul>
+                    <li>color, background, font-size, font-family</li>
+                    <li>margin, padding, border, width, height</li>
+                    <li>display: block, inline, flex, grid</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Animaciones</h2>
+                    <ul>
+                    <li><strong>transition:</strong> cambia suavemente un estilo</li>
+                    <li><strong>@keyframes:</strong> define animaciones personalizadas</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Antecedentes de CSS3</h2>
+                    <p>CSS3 nació en 1999, introdujo nuevos módulos para la animación, las transformaciones y las transiciones, lo que permitió a los diseñadores web crear efectos más dinámicos y atractivos.
+                        Aunque antes de el existieron otras dos versiones, como CSS1 y CSS2.
+                    </p>
+                    <p>CSS y sus versiones.</p>
+                    <ol>CSS1
+                        <li>Nace en 1996.</li>
+                        <li>Fue la primera versión de este lenguaje.</li>
+                        <li>Contaba con caracteristicas muy basicas para el diseño web.</li>
+                    </ol>
+                    <ol>CSS2
+                        <li>Nace en 1998.</li>
+                        <li>Amplió las caracteristicas editables permitidas. (Ej. tablas o formularios)</li>
+                        <li>Introdujo nuevos tipos de selectores, como selectores de atributo, pseudo-clases y pseudo-elementos.</li>
+                    </ol>
+                    <ol>CSS3
+                        <li>Nace en 1999.</li>
+                        <li>Añadió muchas nuevas maneras de editar el texto, cajas, contenido, sombras.</li>
+                        <li>Introdujo nuevos módulos para la animación, las transformaciones y las transiciones.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Hoja de estilo externa</h2>
+                    <p>Una hoja de estilo externa es un archivo aparte donde se programa todo el diseño de la web. 
+                        La idea de separar el contenido HTML del estilo CSS nos ayuda a que nuestro código quede más limpio y fácil de entender.</p>
+                        <ol><b>Ventajas</b>
+                            <li>El index principal queda más ordenado.</li>
+                            <li>Es más fácil actualizar, ya que solo cambias el CSS.</li>
+                            <li>Sigue sus propiar normas de indentacion.</li>
+                        </ol>
+                </section>
+
+                <section>
+                    <h2>Reglas en CSS</h2>
+                    <p>Una regla CSS está formada por un selector y un bloque de declaraciones.  
+                        Cada declaración es una pareja propiedad: valor que define un estilo.</p>
+                    <p>Ejemplo:</p>
+                    <code>p { color: blue; font-size: 16px;}</code>
+                    <p>Aquí el selector es p, y las declaraciones son color: blue; y font-size: 16px;.</p>
+            </section>
+            </article>
         </section>
 
 
