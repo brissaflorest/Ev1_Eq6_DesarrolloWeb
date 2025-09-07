@@ -12,6 +12,12 @@ h2 {
   padding-bottom: 5px;
 }
 
+h3 {
+  border-bottom: 2px dashed #ff96c2; /* un poco más vivo */
+  padding-bottom: 4px;
+}
+
+
 .text-rosita {
   color: #ff91a4;
 }
@@ -36,4 +42,47 @@ a {
 a:hover {
   color: #ff1493;
   text-decoration: underline;
+}
+
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contenedor-integrante {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.contenedor-imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-imagen img {
+  width: 15.625rem;
+  height: 15.625rem;
+  object-fit: cover;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 4px 12px rgba(255, 150, 194, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-imagen img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 8px 20px rgba(255, 150, 194, 0.9);
+}
+
+.contenedor-texto {
+   display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente respecto a la imagen */
+  padding-left: 2rem;      /* separa de la imagen */
+  padding-top: 1rem;
 }
