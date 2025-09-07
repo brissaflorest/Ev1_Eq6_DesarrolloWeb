@@ -13,10 +13,24 @@
 </head>
 
 <body>
-    <header class="bg-gradient text-black text-center p-4">
-        <h1>Blog de Desarrollo Web</h1>
-        <p>Fundamentos, estructura y estilo para crear sitios hermosos</p>
+    <header class="header-kawaii text-center p-3">
+        <h1 class="display-4 fw-bold">🌐 Blog de Desarrollo Web</h1>
+        <p class="lead">Fundamentos, estructura y estilo para crear sitios hermosos</p>
     </header>
+
+    <nav class="container">
+        <div class="card shadow-sm border-0 index-kawaii">
+            <div class="card-body">
+                <h5 class="card-title text-center mb-3">Índice de Contenidos</h5>
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
+                    <li><a href="#introduccion" class="btn btn-outline-primary btn-sm btn-kawaii">Introducción</a></li>
+                    <li><a href="#conceptos-html5" class="btn btn-outline-rosita btn-sm">HTML5</a></li>
+                    <li><a href="#css" class="btn btn-outline-info btn-sm btn-kawaii">CSS</a></li>
+                    <li><a href="#nosotros" class="btn btn-outline-warning btn-sm btn-kawaii">Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main class="container mt-4">
         <!-- Sección 1: Introducción -->
@@ -214,72 +228,62 @@
 
         <!-- Sección 3: CSS -->
         <section id="css" class="mb-5">
-            <h1>Sobre CSS</h1>
+            <h3 class="text-info">Sobre CSS</h3>
             <article>
                 <section>
-                    <h2>¿Qué es CSS?</h2>
                     <p>Es un lenguaje que define el estilo de páginas web: colores, tamaños, posiciones y diseño.</p>
-                    <p>Se puede aplicar en línea, en el head con <code>&lt;style&gt;</code> o en un archivo externo <code>.css</code>.</p>
-                    <h2>Su proposito</h2>
+                    <p>Se puede aplicar en línea, en el head con <code>&lt;style&gt;</code> o en un archivo externo <code>.css</code></p><br>
+                    
+                    <h4>Su propósito</h4>
                     <p>CSS es el modelo de lenguaje caracteristico de html, diseñado principalmente para ser el proveedor del diseño del contenido de nuestro archivo html. <br>
                         Su función es separar la estructura de la presentación, facilitando la creación de diseños web mas atractivos.
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Sintaxis</h2>
+                    </p><br>
+                
+                    <h4>Sintaxis</h4>
                     <p><code>elemento { propiedad: valor; }</code></p>
-                    <p>Ejemplo: <code>p { color: red; }</code></p>
-                    <h2>Indentación</h2>
+                    <p>Ejemplo: <code>p { color: red; }</code></p><br>
+
+                    <h4>Indentación</h4>
                     <p>Es un proceso simple que se sigue para la indentacion dentro de CSS, ya que todo se compone de el orden en el codigo.</p>
                     <p>Ejemplo CON Indentación: <br>
                         <code> p {<br> 
                             &nbsp; color: red; <br> 
                             &nbsp; margin: 20px; <br> 
-                            &nbsp; padding: 10px; <br> }</code></p>
-                    <h2>Comentarios</h2>
+                            &nbsp; padding: 10px; <br> }</code></p><br>
+
+                    <h4>Comentarios</h4>
                     <p>El metodo que se utiliza para dejar un comentario como programador en este lenguaje, 
                         es distinto a muchos otros. Pero funciona de la misma manera, 
                         no se muestra al usuario y solo lo ven las personas con acceso al codigo 
                         (o si eres curioso e inspeccionas la pagina con tu navegador)</p>
                     <p><code>/*<i>COMENTARIO</i>*/</code></p>
-                    <p>Ejemplo de uso: <code>/*ESTO ES UN COMENTARIO*/</code></p>
-                </section>
-
-                <section>
-                    <h2>Selectores principales</h2>
+                    <p>Ejemplo de uso: <code>/*ESTO ES UN COMENTARIO*/</code></p><br>
+                
+                    <h4>Selectores principales</h4>
                     <ul>
                     <li><strong>Tipo:</strong> h1, p, div</li>
                     <li><strong>Clase:</strong> .caja</li>
                     <li><strong>ID:</strong> #principal</li>
                     <li><strong>Pseudoclases:</strong> :hover, :first-child</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Modelo de caja</h2>
-                    <p>Cada elemento se compone de: <em>contenido</em> + <em>padding</em> + <em>border</em> + <em>margin</em>.</p>
-                </section>
-
-                <section>
-                    <h2>Propiedades comunes</h2>
+                    </ul><br>
+                
+                    <h4>Modelo de caja</h4>
+                    <p>Cada elemento se compone de: <em>contenido</em> + <em>padding</em> + <em>border</em> + <em>margin</em></p><br>
+                
+                    <h4>Propiedades comunes</h4>
                     <ul>
                     <li>color, background, font-size, font-family</li>
                     <li>margin, padding, border, width, height</li>
                     <li>display: block, inline, flex, grid</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Animaciones</h2>
+                    </ul><br>
+                
+                    <h4>Animaciones</h4>
                     <ul>
                     <li><strong>transition:</strong> cambia suavemente un estilo</li>
                     <li><strong>@keyframes:</strong> define animaciones personalizadas</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Antecedentes de CSS3</h2>
+                    </ul><br>
+                
+                    <h4>Antecedentes de CSS3</h4>
                     <p>CSS3 nació en 1999, introdujo nuevos módulos para la animación, las transformaciones y las transiciones, lo que permitió a los diseñadores web crear efectos más dinámicos y atractivos.
                         Aunque antes de el existieron otras dos versiones, como CSS1 y CSS2.
                     </p>
@@ -298,28 +302,31 @@
                         <li>Nace en 1999.</li>
                         <li>Añadió muchas nuevas maneras de editar el texto, cajas, contenido, sombras.</li>
                         <li>Introdujo nuevos módulos para la animación, las transformaciones y las transiciones.</li>
-                    </ol>
-                </section>
-
-                <section>
-                    <h2>Hoja de estilo externa</h2>
+                    </ol><br>
+                
+                    <h4>Hoja de estilo externa</h4>
                     <p>Una hoja de estilo externa es un archivo aparte donde se programa todo el diseño de la web. 
                         La idea de separar el contenido HTML del estilo CSS nos ayuda a que nuestro código quede más limpio y fácil de entender.</p>
                         <ol><b>Ventajas</b>
                             <li>El index principal queda más ordenado.</li>
                             <li>Es más fácil actualizar, ya que solo cambias el CSS.</li>
                             <li>Sigue sus propiar normas de indentacion.</li>
-                        </ol>
-                </section>
-
-                <section>
-                    <h2>Reglas en CSS</h2>
+                        </ol><br>
+                
+                    <h4>Reglas en CSS</h4>
                     <p>Una regla CSS está formada por un selector y un bloque de declaraciones.  
                         Cada declaración es una pareja propiedad: valor que define un estilo.</p>
                     <p>Ejemplo:</p>
-                    <code>p { color: blue; font-size: 16px;}</code>
-                    <p>Aquí el selector es p, y las declaraciones son color: blue; y font-size: 16px;.</p>
-            </section>
+                    <code>p { color: blue; font-size: 16px;}</code><br>
+                    <p>Aquí el selector es p, y las declaraciones son color: blue; y font-size: 16px;.</p><br>
+
+                    <h5>Explora más sobre CSS3 en estos sitios:</h5>
+                    <ul>
+                        <li><a href="https://www.ionos.mx/digitalguide/paginas-web/diseno-web/que-es-css/" target="_blank">¿Qué es CSS?</a></li>
+                        <li><a href="https://lenguajecss.com/css/layout/display-css/" target="_blank">La propiedad display</a></li>
+                        <li><a href="https://designicode.com/2023/03/26/la-evolucion-de-css-en-la-web/" target="_blank">La evolución de CSS en la web</a></li>
+                    </ul>
+                </section>
             </article>
         </section>
 
@@ -327,8 +334,9 @@
         <!-- Sección 4: Nosotros -->
         <section id="nosotros" class="mb-5">
             <h2 class="text-warning">Nosotros</h2>
-            <p>Este blog fue creado por <strong>el equipo 6</strong>, aquí compartimos conocimientos con amor y
-                creatividad.</p>
+            <p>Somos el Equipo 6 de la materia de Desarrollo Web en la UANL, 
+                y hemos creado este blog para compartir conocimientos sobre HTML5 y CSS3.
+                Cada integrante ha aportado su perspectiva única y habilidades para hacer de este proyecto una experiencia de aprendizaje colaborativa.</p>
 
             <!--Brissa-->
             <div class="contenedor-integrante">
@@ -418,7 +426,7 @@
                 <div class="contenedor-texto">
                     <h3 style="font-weight: bold;">Devany Arleth Garza Oviedo</h3>
                     <p>
-                        Soy una persona muy alegre, muy creativa que le gusta aprender cosas nuevas e interesantes
+                        Soy una persona muy alegre, muy creativa que le gusta aprender cosas nuevas e interesantes.
                     </p>
 
                 </div>
@@ -426,7 +434,7 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-3">
+    <footer class="bg-rosita text-white text-center p-3">
         <p>Blog creado con por Equipo 6 | UANL 2025</p>
     </footer>
 </body>
